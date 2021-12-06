@@ -8,6 +8,11 @@ export default class Init extends Command {
     ...Command.flags,
   };
   async run(): Promise<void> {
+  const newPackageJson=  this.packageJson;
+  if ( newPackageJson.scripts.postinstall) throw new Error("not valid");
+   newPackageJson.scripts.postinstall='npm run yjson add'
+
+   await this.writeJsonFile(newPackageJson,this.packageJsonPath)
     const yjsonObject = {
       name: this.packageJson.name,
       packageJsonPath: this.packageJsonPath,

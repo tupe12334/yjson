@@ -26,11 +26,13 @@ export default abstract class extends Command {
     //@ts-ignore
     this.flags = flags;
   }
-
-  async writeYjson(content: Object) {
+  async writeJsonFile(content: Object, path: string): Promise<void> {
     await writeFileSync(
-      this.yJsonPath,
+      path,
       format(JSON.stringify(content), { parser: "json" })
     );
+  }
+  async writeYjson(content: Object) {
+    return await this.writeJsonFile(content, this.yJsonPath);
   }
 }
