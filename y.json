@@ -1,0 +1,7 @@
+{
+  "name": "@tupe12334/yjson",
+  "packageJsonPath": "/Users/ofek/Documents/Git/yjson/package.json",
+  "dependencies": {
+    "tslib": { "version": "^1.14.1", "addingDate": "2021-12-06T21:45:17.706Z" }
+  }
+}

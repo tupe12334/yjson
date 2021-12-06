@@ -1,10 +1,18 @@
-import Command from "@oclif/command";
+import { writeFileSync } from "fs";
+import Command from "../base";
 
 export default class Init extends Command {
   static description = "init a y.json file in a repository";
-
   static examples = [`$ yjson init`];
-  run(): PromiseLike<any> {
-    throw new Error("Method not implemented.");
+  static flags = {
+    ...Command.flags,
+  };
+  async run(): Promise<void> {
+    const yjsonObject = {
+      name: this.packageJson.name,
+      packageJsonPath: this.packageJsonPath,
+      dependencies: {},
+    };
+    await this.writeYjson(yjsonObject);
   }
 }
