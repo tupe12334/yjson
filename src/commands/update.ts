@@ -1,6 +1,10 @@
 import Command from "../base";
 import Add, { AddActionsEnum } from "./add";
 export default class Update extends Command {
+  static description =
+    "Make sure that the y.json is up to date with the package.json";
+  static examples = [`$ yjson update`];
+
   async run(): Promise<void> {
     if (!this.packageJson.dependencies)
       throw new Error("Package.json is missing dependencies property");

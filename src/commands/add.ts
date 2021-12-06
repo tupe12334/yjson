@@ -14,7 +14,6 @@ export default class Add extends Command {
   static description = "Add a npm package to your docs";
   static examples = [`$ yjson add lerna`];
   static flags = {
-    // help: flags.string({ description: "name of the package", required: true }),
     action: flags.enum({
       char: "a",
       options: Object.values(AddActionsEnum),
