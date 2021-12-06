@@ -1,5 +1,54 @@
 {
   "name": "@tupe12334/yjson",
   "packageJsonPath": "/Users/ofek/Documents/Git/yjson/package.json",
-  "dependencies": {}
+  "dependencies": {
+    "@oclif/command": {
+      "version": "^1.8.8",
+      "addingDate": "2021-12-06T23:38:03.599Z",
+      "blame": "ofek.gabay.he@gmail.com",
+      "action": "Update"
+    },
+    "@oclif/config": {
+      "version": "^1.18.2",
+      "addingDate": "2021-12-06T23:38:03.662Z",
+      "blame": "ofek.gabay.he@gmail.com",
+      "action": "Add"
+    },
+    "@oclif/plugin-help": {
+      "version": "^3.2.12",
+      "addingDate": "2021-12-06T23:38:03.704Z",
+      "blame": "ofek.gabay.he@gmail.com",
+      "action": "Update"
+    },
+    "@tupe12334/yjson": {
+      "version": "^0.0.2",
+      "addingDate": "2021-12-06T23:38:03.749Z",
+      "blame": "ofek.gabay.he@gmail.com",
+      "action": "Update"
+    },
+    "lodash": {
+      "version": "^4.17.21",
+      "addingDate": "2021-12-06T23:38:03.789Z",
+      "blame": "ofek.gabay.he@gmail.com",
+      "action": "Update"
+    },
+    "prettier": {
+      "version": "^2.5.1",
+      "addingDate": "2021-12-06T23:38:03.830Z",
+      "blame": "ofek.gabay.he@gmail.com",
+      "action": "Update"
+    },
+    "tslib": {
+      "version": "^1.14.1",
+      "addingDate": "2021-12-06T23:38:03.873Z",
+      "blame": "ofek.gabay.he@gmail.com",
+      "action": "Update"
+    },
+    "type-fest": {
+      "version": "^0.21.3",
+      "addingDate": "2021-12-06T23:38:03.913Z",
+      "blame": "ofek.gabay.he@gmail.com",
+      "action": "Update"
+    }
+  }
 }
