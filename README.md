@@ -15,11 +15,11 @@ yjson
 # Usage
 <!-- usage -->
 ```sh-session
-$ npm install -g yjson
+$ npm install -g @tupe12334/yjson
 $ yjson COMMAND
 running command...
 $ yjson (-v|--version|version)
-yjson/0.0.0 darwin-x64 node-v14.18.0
+@tupe12334/yjson/0.0.1 darwin-x64 node-v14.18.0
 $ yjson --help [COMMAND]
 USAGE
   $ yjson COMMAND
@@ -30,6 +30,7 @@ USAGE
 <!-- commands -->
 * [`yjson hello [FILE]`](#yjson-hello-file)
 * [`yjson help [COMMAND]`](#yjson-help-command)
+* [`yjson init`](#yjson-init)
 
 ## `yjson hello [FILE]`
 
@@ -49,7 +50,7 @@ EXAMPLE
   hello world from ./src/hello.ts!
 ```
 
-_See code: [src/commands/hello.ts](https://github.com/tupe12334/yjson/blob/v0.0.0/src/commands/hello.ts)_
+_See code: [src/commands/hello.ts](https://github.com/tupe12334/yjson/blob/v0.0.1/src/commands/hello.ts)_
 
 ## `yjson help [COMMAND]`
 
@@ -67,4 +68,18 @@ OPTIONS
 ```
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.12/src/commands/help.ts)_
+
+## `yjson init`
+
+init a y.json file in a repository
+
+```
+USAGE
+  $ yjson init
+
+EXAMPLE
+  $ yjson init
+```
+
+_See code: [src/commands/init.ts](https://github.com/tupe12334/yjson/blob/v0.0.1/src/commands/init.ts)_
 <!-- commandsstop -->
