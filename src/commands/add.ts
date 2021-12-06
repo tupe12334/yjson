@@ -1,6 +1,7 @@
 import { flags } from "@oclif/command";
 import { writeFileSync } from "fs";
 import Command from "../base";
+import { getUserEmail } from "../utils/git";
 
 const PACKAGE_NAME_ARG_KEY = "packageName";
 
@@ -14,12 +15,14 @@ export default class Add extends Command {
   async run(): Promise<void> {
     const { args } = this.parse(Add);
     const packageName = args[PACKAGE_NAME_ARG_KEY];
+    const email = await getUserEmail();
     const packageJson = this.packageJson;
     const packageVersion = packageJson.dependencies[packageName];
     const newYJson = this.yJson;
     newYJson.dependencies[packageName] = {
       version: packageVersion,
       addingDate: new Date(),
+      blame: email,
     };
     await this.writeYjson(newYJson);
   }

@@ -46,13 +46,15 @@
     "prepack": "rm -rf lib && tsc -b && oclif-dev manifest && oclif-dev readme",
     "test": "echo NO TESTS",
     "version": "oclif-dev readme && git add README.md",
-    "postinstall": "npm run yjson add"
+    "postinstall": "yjson add tslib",
+    "postuninstall": ""
   },
   "types": "lib/index.d.ts",
   "dependencies": {
     "@oclif/command": "^1.8.8",
     "@oclif/config": "^1.18.2",
     "@oclif/plugin-help": "^3.2.12",
+    "@tupe12334/yjson": "^0.0.2",
     "prettier": "^2.5.1",
     "tslib": "^1.14.1"
   },

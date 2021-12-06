@@ -19,7 +19,7 @@ $ npm install -g @tupe12334/yjson
 $ yjson COMMAND
 running command...
 $ yjson (-v|--version|version)
-@tupe12334/yjson/0.0.1 darwin-x64 node-v14.18.0
+@tupe12334/yjson/0.0.2 darwin-x64 node-v14.18.0
 $ yjson --help [COMMAND]
 USAGE
   $ yjson COMMAND
@@ -28,9 +28,27 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
+* [`yjson add [PACKAGENAME]`](#yjson-add-packagename)
 * [`yjson hello [FILE]`](#yjson-hello-file)
 * [`yjson help [COMMAND]`](#yjson-help-command)
 * [`yjson init`](#yjson-init)
+
+## `yjson add [PACKAGENAME]`
+
+Add a npm package to your docs
+
+```
+USAGE
+  $ yjson add [PACKAGENAME]
+
+OPTIONS
+  -p, --packageJsonPath=packageJsonPath
+
+EXAMPLE
+  $ yjson add lerna
+```
+
+_See code: [src/commands/add.ts](https://github.com/tupe12334/yjson/blob/v0.0.2/src/commands/add.ts)_
 
 ## `yjson hello [FILE]`
 
@@ -50,7 +68,7 @@ EXAMPLE
   hello world from ./src/hello.ts!
 ```
 
-_See code: [src/commands/hello.ts](https://github.com/tupe12334/yjson/blob/v0.0.1/src/commands/hello.ts)_
+_See code: [src/commands/hello.ts](https://github.com/tupe12334/yjson/blob/v0.0.2/src/commands/hello.ts)_
 
 ## `yjson help [COMMAND]`
 
@@ -77,9 +95,12 @@ init a y.json file in a repository
 USAGE
   $ yjson init
 
+OPTIONS
+  -p, --packageJsonPath=packageJsonPath
+
 EXAMPLE
   $ yjson init
 ```
 
-_See code: [src/commands/init.ts](https://github.com/tupe12334/yjson/blob/v0.0.1/src/commands/init.ts)_
+_See code: [src/commands/init.ts](https://github.com/tupe12334/yjson/blob/v0.0.2/src/commands/init.ts)_
 <!-- commandsstop -->
