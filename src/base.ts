@@ -6,13 +6,14 @@ import {
 } from "./utils/packageJson";
 import { yJsonAfterValidation, yJsonPath } from "./utils/yJson";
 import { format } from "prettier";
+import { PackageJson } from "type-fest";
 
 export default abstract class extends Command {
   static flags = {
     packageJsonPath: flags.string({ char: "p" }),
   };
   packageJsonPath!: string;
-  packageJson: any;
+  packageJson!: PackageJson;
   yJsonPath!: string;
   yJson: any;
   async init() {

@@ -1,6 +1,6 @@
 {
   "name": "@tupe12334/yjson",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "tupe12334 @tupe12334",
   "bin": {
     "yjson": "./bin/run"
@@ -8,6 +8,8 @@
   "bugs": "https://github.com/tupe12334/yjson/issues",
   "devDependencies": {
     "@oclif/dev-cli": "^1.26.7",
+    "@types/jest": "^27.0.3",
+    "@types/lodash": "^4.14.177",
     "@types/node": "^10.17.60",
     "@types/prettier": "^2.4.2",
     "eslint": "^7.32.0",
@@ -46,8 +48,8 @@
     "prepack": "rm -rf lib && tsc -b && oclif-dev manifest && oclif-dev readme",
     "test": "echo NO TESTS",
     "version": "oclif-dev readme && git add README.md",
-    "postinstall": "yjson add tslib",
-    "postuninstall": ""
+    "postinstall": "yjson update",
+    "postuninstall": "yjson update"
   },
   "types": "lib/index.d.ts",
   "dependencies": {
@@ -55,8 +57,10 @@
     "@oclif/config": "^1.18.2",
     "@oclif/plugin-help": "^3.2.12",
     "@tupe12334/yjson": "^0.0.2",
+    "lodash": "^4.17.21",
     "prettier": "^2.5.1",
-    "tslib": "^1.14.1"
+    "tslib": "^1.14.1",
+    "type-fest": "^0.21.3"
   },
   "publishConfig": {
     "access": "public",
