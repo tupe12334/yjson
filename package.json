@@ -1,6 +1,6 @@
 {
   "name": "@tupe12334/yjson",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "tupe12334 @tupe12334",
   "bin": {
     "yjson": "./bin/run"
