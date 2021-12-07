@@ -38,15 +38,76 @@
       "blame": "ofek.gabay.he@gmail.com",
       "action": "Update"
     },
-    "tslib": {
-      "version": "^1.14.1",
-      "addingDate": "2021-12-06T23:38:03.873Z",
-      "blame": "ofek.gabay.he@gmail.com",
-      "action": "Update"
-    },
     "type-fest": {
       "version": "^0.21.3",
       "addingDate": "2021-12-06T23:38:03.913Z",
+      "blame": "ofek.gabay.he@gmail.com",
+      "action": "Update"
+    },
+    "tslib": {
+      "version": "^1.14.1",
+      "addingDate": "2021-12-07T07:23:29.924Z",
+      "blame": "ofek.gabay.he@gmail.com",
+      "action": "Add"
+    },
+    "react": {
+      "version": "^17.0.2",
+      "addingDate": "2021-12-07T07:25:53.952Z",
+      "blame": "ofek.gabay.he@gmail.com",
+      "action": "Add"
+    },
+    "@oclif/dev-cli": {
+      "addingDate": "2021-12-07T07:54:55.113Z",
+      "blame": "ofek.gabay.he@gmail.com",
+      "action": "Update"
+    },
+    "@types/jest": {
+      "addingDate": "2021-12-07T07:54:55.184Z",
+      "blame": "ofek.gabay.he@gmail.com",
+      "action": "Update"
+    },
+    "@types/lodash": {
+      "addingDate": "2021-12-07T07:54:55.233Z",
+      "blame": "ofek.gabay.he@gmail.com",
+      "action": "Update"
+    },
+    "@types/node": {
+      "addingDate": "2021-12-07T07:54:55.273Z",
+      "blame": "ofek.gabay.he@gmail.com",
+      "action": "Update"
+    },
+    "@types/prettier": {
+      "addingDate": "2021-12-07T07:54:55.314Z",
+      "blame": "ofek.gabay.he@gmail.com",
+      "action": "Update"
+    },
+    "eslint": {
+      "addingDate": "2021-12-07T07:54:55.363Z",
+      "blame": "ofek.gabay.he@gmail.com",
+      "action": "Update"
+    },
+    "eslint-config-oclif": {
+      "addingDate": "2021-12-07T07:54:55.405Z",
+      "blame": "ofek.gabay.he@gmail.com",
+      "action": "Update"
+    },
+    "eslint-config-oclif-typescript": {
+      "addingDate": "2021-12-07T07:54:55.449Z",
+      "blame": "ofek.gabay.he@gmail.com",
+      "action": "Update"
+    },
+    "globby": {
+      "addingDate": "2021-12-07T07:54:55.493Z",
+      "blame": "ofek.gabay.he@gmail.com",
+      "action": "Update"
+    },
+    "ts-node": {
+      "addingDate": "2021-12-07T07:54:55.548Z",
+      "blame": "ofek.gabay.he@gmail.com",
+      "action": "Update"
+    },
+    "typescript": {
+      "addingDate": "2021-12-07T07:54:55.608Z",
       "blame": "ofek.gabay.he@gmail.com",
       "action": "Update"
     }

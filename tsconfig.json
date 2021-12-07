@@ -7,7 +7,8 @@
     "rootDir": "src",
     "strict": true,
     "target": "es2017",
-    "typeRoots": ["./node_modules/@types"]
+    "typeRoots": ["./node_modules/@types"],
+    "lib": ["ESNext"]
   },
   "include": ["src/**/*"]
 }

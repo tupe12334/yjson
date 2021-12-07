@@ -2,9 +2,10 @@ import { writeFileSync } from "fs";
 import Command from "../base";
 import { getUserEmail } from "../utils/git";
 import { addCommandToScript } from "../utils/packageJson";
+import Update from "./update";
 
-const POST_INSTALL_COMMAND = "yjson update";
-const POST_UNINSTALL_COMMAND = "yjson update";
+const POST_INSTALL_COMMAND = "yjson add";
+const POST_UNINSTALL_COMMAND = "yjson remove";
 
 export default class Init extends Command {
   static description = "init a y.json file in a repository";
@@ -31,5 +32,6 @@ export default class Init extends Command {
       dependencies: {},
     };
     await this.writeYjson(yjsonObject);
+    await Update.run([]);
   }
 }

@@ -50,8 +50,8 @@
     "prepack": "rm -rf lib && tsc -b && oclif-dev manifest && oclif-dev readme",
     "test": "echo NO TESTS",
     "version": "oclif-dev readme && git add README.md",
-    "postinstall": "yjson update",
-    "postuninstall": "yjson update"
+    "postinstall": "yjson add",
+    "postuninstall": "yjson remove"
   },
   "types": "lib/index.d.ts",
   "dependencies": {
@@ -60,6 +60,7 @@
     "@oclif/plugin-help": "^3.2.12",
     "lodash": "^4.17.21",
     "prettier": "^2.5.1",
+    "react": "^17.0.2",
     "tslib": "^1.14.1",
     "type-fest": "^0.21.3"
   },
